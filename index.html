@@ -3,45 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keming Wu 吴科铭</title>
-  <style>
-    body { max-width: 760px; margin: 40px auto; padding: 0 16px; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; color: #111; }
-    h1 { margin-bottom: 6px; }
-    .muted { color: #666; margin-top: 0; }
-    h2 { margin-top: 28px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
-    a { text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; }
-  </style>
+  <title>Keming Wu | 吴科铭</title>
+  <meta name="description" content="Keming Wu's academic homepage." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Keming Wu</h1>
-  <p class="muted">MA Student in Philosophy, Texas Tech University</p>
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <h1 class="site-title">
+        <span class="en">Keming Wu</span>
+        <span class="cn">（吴科铭）</span>
+      </h1>
+      <div class="title-underline"></div>
+    </div>
+  </header>
 
-  <h2>About</h2>
-  <p>
-    I work on ethics.
-  </p>
+  <!-- Main Content -->
+  <main class="container">
+    <p class="image-note">
+      Header image:
+      <a href="#" aria-label="About header image">Ye Shanghai Live, 07/12/2025 (the birthday of Donda West)</a>
+    </p>
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Normative Ethics</li>
-  </ul>
+    <hr />
 
-  <h2>Work in Progress</h2>
-  <ul>
-    <li>Belief
-  </ul>
+    <section class="cta-row">
+      <a class="btn-cv" href="/cv.pdf" target="_blank" rel="noopener">CV</a>
+    </section>
 
-  <h2>Teaching</h2>
-  <ul>
-    <li>Introduction to Ethics (TA)</li>
-  </ul>
+    <hr />
 
-  <h2>CV</h2>
-  <p><a href="#">Download CV (PDF)</a></p>
+    <section class="intro-grid">
+      <div class="intro-text">
+        <p>
+          I am a master student in the
+          <a href="https://www.depts.ttu.edu/philosophy/" target="_blank" rel="noopener">Philosophy Department at Texas Tech</a>.
+        </p>
+        <p>
+          I work primarily in moral theory, metaphysics and philosophy of law.
+        </p>
+        <p>
+          I got my B.A. in
+          <a href="https://www.seu.edu.cn/" target="_blank" rel="noopener">Philosophy at Southeast University</a>
+          <span class="cn">（东南大学）</span>.
+        </p>
+      </div>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:kemingwu668@gmail.com">kemingwu668@gmail.com</a></p>
+      <aside class="intro-aside">
+        <figure>
+          <!-- 你后面可以换成自己的头像 -->
+          <img src="assets/profile.jpg" alt="Profile photo" />
+          <figcaption>
+            Probably my signature photo <span class="cn">（人生照片）</span>
+          </figcaption>
+        </figure>
+      </aside>
+    </section>
+  </main>
 </body>
 </html>
+
