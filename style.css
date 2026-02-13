@@ -1,0 +1,215 @@
+/* ===== Font System =====
+   English: Georgia
+   Chinese: 华文仿宋 (STFangsong) with fallbacks
+*/
+:root {
+  --bg: #f2f2f2;
+  --text: #0f1720;
+  --muted: #666;
+  --line: #dddddd;
+  --accent: #8d7c59;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+
+/* 默认英文字体 */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+/* 中文专用字体类：华文仿宋 */
+.cn,
+:lang(zh),
+:lang(zh-CN),
+:lang(zh-Hans),
+:lang(zh-TW),
+:lang(zh-Hant) {
+  font-family: "STFangsong", "FangSong", "华文仿宋", "仿宋", serif;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  min-height: 430px;
+  width: 100%;
+  background-image: url("assets/index header photo Ye Shanghai.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* 让文字更清晰 */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.26);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 1rem 1.2rem;
+  width: min(900px, 92vw);
+  border: 2px solid rgba(130, 180, 255, 0.85); /* 模拟你截图里的蓝框 */
+}
+
+.site-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.site-title .en {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.site-title .cn {
+  margin-left: 0.2em;
+  font-size: 0.86em;
+  font-weight: 400;
+}
+
+.title-underline {
+  width: 140px;
+  height: 10px;
+  margin: 16px auto 2px;
+  background: #b89f63;
+}
+
+/* ===== Content ===== */
+.container {
+  width: min(1100px, 92vw);
+  margin: 34px auto 64px;
+}
+
+.image-note {
+  text-align: center;
+  color: #27313c;
+  margin: 10px 0 26px;
+  font-size: 1.05rem;
+}
+
+.image-note a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 26px 0;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px 0;
+}
+
+.btn-cv {
+  display: inline-block;
+  min-width: 170px;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 1.75rem;
+  line-height: 1.1;
+  transition: transform 0.08s ease, opacity 0.15s ease;
+}
+
+.btn-cv:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.intro-text p {
+  margin: 0 0 16px;
+  font-size: 2rem; /* 大一点，接近你截图 */
+}
+
+.intro-text a {
+  color: #182a42;
+  text-decoration: underline;
+}
+
+.intro-aside figure {
+  margin: 0;
+  text-align: center;
+}
+
+.intro-aside img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.intro-aside figcaption {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+
+  .hero {
+    min-height: 320px;
+  }
+
+  .hero-inner {
+    width: min(92vw, 760px);
+    border-width: 1.5px;
+  }
+
+  .title-underline {
+    width: 110px;
+    height: 8px;
+  }
+
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .intro-text p,
+  .intro-aside figcaption {
+    font-size: 1.25rem;
+  }
+
+  .btn-cv {
+    font-size: 1.25rem;
+    min-width: 120px;
+  }
+}
