@@ -4,29 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Keming Wu | 吴科铭</title>
-  <meta name="description" content="Keming Wu's academic homepage." />
+  <meta name="description" content="Keming Wu's homepage." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Hero Header -->
-  <header class="hero">
+  <header class="hero" role="banner" aria-label="Homepage header image">
     <div class="hero-overlay"></div>
     <div class="hero-inner">
       <h1 class="site-title">
         <span class="en">Keming Wu</span>
         <span class="cn">（吴科铭）</span>
       </h1>
-      <div class="title-underline"></div>
+      <div class="title-underline" aria-hidden="true"></div>
     </div>
   </header>
 
+  <!-- Header note: directly below hero, right aligned -->
+  <div class="container header-note-wrap">
+    <p class="header-note">
+      Header image:
+      <a href="https://en.wikipedia.org/wiki/Kanye_West" target="_blank" rel="noopener noreferrer">Ye</a>
+      Shanghai Live, 07/12/2025 (the birthday of
+      <a href="https://en.wikipedia.org/wiki/Donda_West" target="_blank" rel="noopener noreferrer">Donda West</a>)
+    </p>
+  </div>
+
   <!-- Main Content -->
   <main class="container">
-    <p class="image-note">
-      Header image:
-      <a href="#" aria-label="About header image">Ye Shanghai Live, 07/12/2025 (the birthday of Donda West)</a>
-    </p>
-
     <hr />
 
     <section class="cta-row">
@@ -39,22 +44,21 @@
       <div class="intro-text">
         <p>
           I am a master student in the
-          <a href="https://www.depts.ttu.edu/philosophy/" target="_blank" rel="noopener">Philosophy Department at Texas Tech</a>.
+          <a href="https://www.depts.ttu.edu/philosophy/" target="_blank" rel="noopener noreferrer">Philosophy Department at Texas Tech</a>.
         </p>
         <p>
           I work primarily in moral theory, metaphysics and philosophy of law.
         </p>
         <p>
           I got my B.A. in
-          <a href="https://www.seu.edu.cn/" target="_blank" rel="noopener">Philosophy at Southeast University</a>
+          <a href="https://rwxy.seu.edu.cn/8773/list.htm" target="_blank" rel="noopener noreferrer">Philosophy at Southeast University</a>
           <span class="cn">（东南大学）</span>.
         </p>
       </div>
 
       <aside class="intro-aside">
         <figure>
-          <!-- 你后面可以换成自己的头像 -->
-          <img src="assets/profile.jpg" alt="Profile photo" />
+          <img src="Signature photo.png" alt="Profile photo of Keming Wu" />
           <figcaption>
             Probably my signature photo <span class="cn">（人生照片）</span>
           </figcaption>
@@ -64,4 +68,3 @@
   </main>
 </body>
 </html>
-
